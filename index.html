@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/mastermind.js"></script>
+    <title>Mastermind</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Mastermind</h1>
+
+        </div>
+    </div>
+
+    <button onClick="newGame()">NEW GAME</button>
+
+
+
+
+    <div class="container" id="gameBoard">
+        <div class="row">
+            <div class="col-md-2 slot1" id="box">
+                <h1></h1>
+            </div>
+
+            <div class="col-md-2 slot2" id="box">
+                <h1></h1>
+            </div>
+
+            <div class="col-md-2 slot3" id="box">
+                <h1></h1>
+            </div>
+
+            <div class="col-md-2 slot4" id="box">
+                <h1></h1>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2" id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2 clickableTarget target1" color='' id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2 clickableTarget target2" color='' id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2 clickableTarget target3" color ='' id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-2 clickableTarget target4" color='' id="box">
+                <h3></h3>
+            </div>
+
+            <div class="col-md-3" id="box3">
+                <div class="row">
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2" id="box2">
+
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button onClick="checkAnswer()" class="checkButt">Check</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br><br><br><br>
+
+
+        <!-- COLOR BOXES -->
+        <div class="row">
+            <div class="col-md-2 red clickable" color="red" id="box">
+
+            </div>
+
+            <div class="col-md-2 green clickable" color="green" id="box">
+
+            </div>
+
+            <div class="col-md-2 blue clickable" color="blue" id="box">
+
+            </div>
+
+            <div class="col-md-2 yellow clickable" color="yellow" id="box">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 brown clickable" color="brown" id="box">
+
+            </div>
+
+            <div class="col-md-2 orange clickable" color="orange" id="box">
+
+            </div>
+
+            <div class="col-md-2 black clickable" color="black" id="box">
+
+            </div>
+
+            <div class="col-md-2 white clickable" color="white" id="box">
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+#gameBoard {
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    transform: scale(.5);
+    
+    
+}
+
+hr {
+    background-color: white;
+}
+
+#box {
+    border-style: solid;
+    border-color: white;
+    margin: 5px;
+    border-radius: 199px;
+    padding: 30px;
+    background-color: rgb(104, 104, 104);
+
+}
+
+p {
+    color: black;
+}
+
+#box2 {
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 99px;
+    padding: 30px;
+    background-color: rgb(104, 104, 104);
+    margin: 2px;
+    
+}
+
+body {
+    background-color: rgb(218, 218, 218);
+}
+
+.red {
+    border-color: red !important;
+    background-color: red !important;
+}
+
+.green {
+    border-color: green !important;
+    background-color: green !important;
+}
+
+.blue {
+    border-color: blue !important;
+    background-color: blue !important;
+}
+
+.yellow {
+    border-color: yellow !important;
+    background-color: yellow !important;
+}
+
+.brown {
+    border-color: #8b4513 !important;
+    background-color: #8b4513 !important;
+}
+
+.orange {
+    border-color: orange !important;
+    background-color: orange !important;
+}
+
+.black {
+    border-color: black !important;
+    background-color: black !important;
+}
+
+.orange {
+    border-color: orange !important;
+    background-color: orange !important;
+}
+
+.white {
+    border-color: rgb(255, 255, 255) !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.defaultColor {
+    background-color: rgb(104, 104, 104) !important;
+    border-color: white !important;
+}
+
+.checkButt {
+    font-size: 20px;
+    float: left;
+}
+
